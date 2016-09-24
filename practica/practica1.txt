@@ -1,0 +1,37 @@
+package practica1;
+
+import java.util.Scanner;
+
+public class Practica1 {
+
+    public static void main(String[] args){
+        //variables
+        String Nombre;
+        String Apellido;
+        int Edad;
+        int numControl;
+        String fecha;
+
+	Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe tu nombre");
+        Nombre = sc.nextLine();
+
+        System.out.println("Escribe tu appellido");
+        Apellido = sc.nextLine();
+
+        System.out.println("Escribe tu edad");
+        Edad = sc.nextInt();
+
+        System.out.println("Escribe tu numero de control: ");
+        numControl = sc.nextInt();
+
+        System.out.println("Introduzca la fecha con formato dd/mm/yyyy");
+        Scanner sc2 = new Scanner(System.in);
+        fecha = sc2.nextLine();
+
+	System.out.println("Tu nombre y apellido es: " + Nombre + " " + Apellido + " y tienes " + Edad + " años");
+        System.out.println("Numero de control: " + numControl);
+        System.out.println("Tu fecha de nacimiento es: "+fecha);
+
+  }
+}
